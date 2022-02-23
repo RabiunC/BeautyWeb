@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/*@font-face {
+    font-family: Robb;
+    src: url('fonts/Roboto-BlackItalic.ttf');
+}*/
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-bg-color: #94618E;
+}
+header{
+    font-family: Roboto;
+    font-weight: 200;
+    background: var(--main-bg-color);
+}
+nav{
+    display: flex;
+}
+nav ul li{
+    list-style-type: none;    
+    padding: 0 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover {
+    font-weight: 400;
+    color: #49274A;
+}
+nav ul{    
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+hr{
+    color:#49274A;
+}
+.logo{
+   display: flex;
+   align-items: center; 
+}
+.logo img {
+    width: 50px;
+    padding: 0 20px;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 30vw;
+    height: 30px;
+    border-radius: 2px;
+    margin: 0 16px 0 60px;
+    padding: 0 10px;
+    font-style: oblique;
+}
+.search button{
+    font-family: Roboto;
+    font-weight: 300;
+}
+.toggle{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10px;
+}
+.toggle:hover{
+    cursor: pointer;
+}
+.slider{
+    overflow: hidden;
+    margin: 12px auto;
+    width: 78vw;
+}
+.card{
+    margin: 40px auto;
+    max-width: 95vw;
+}
+.cards{
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    overflow: hidden;
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+.card-item img{
+    width: 160px;
+    height: 160px;
+}
+
+.card-item img:hover{
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+}
+.card h3{
+    margin: 15px 15px;
+    color: #49274A;
+}
+.lines{
+    padding: 10px;
+}
+.container{
+    min-height: calc(100vh - 60px - 12vh)
+}
+
+footer{    
+    height: 12vh;
+    background: #49274A;
+    font-family: Roboto;
+    font-weight: 200;
+    color: whitesmoke;
+}
